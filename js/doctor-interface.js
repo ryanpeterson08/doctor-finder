@@ -8,5 +8,10 @@ $(document).ready(function() {
 
     var userInput = $('#user-input').val();
     doctorInstance.getDoctors(userInput);
+
+    doctorInstance.doctorsArray.forEach(function(doctor){
+      //console.log(doctor.first_name + " " + doctor.last_name);
+      $('#show-doctors').append("<h4>" + doctor.first_name + " " + doctor.last_name + "</h4");
+    });
   });
 });
