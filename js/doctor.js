@@ -10,6 +10,7 @@ Doctor.prototype.searchByCondition = function(userIssue)
   var instance = this;
   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ userIssue +'&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
    .then(function(result) {
+     //console.log(result.data[0].practices[4].visit_address.street);
      instance.doctorsArray = [];
      for(var x = 0; x < result.data.length; x++)
      {

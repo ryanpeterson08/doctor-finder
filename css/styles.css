@@ -36,3 +36,8 @@ li{
 #show-doctors{
   margin: auto;
 }
+
+#map{
+  height: 300px;
+  width: 50%;
+}

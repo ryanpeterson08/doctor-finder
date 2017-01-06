@@ -1,8 +1,12 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
+var Map = require('./../js/map.js').mapModule;
 
 
 var doctorInstance = new Doctor();
+
 $(document).ready(function() {
+  var mapInstance = new Map();
+  $("#map").append(mapInstance)
   $('form#condition').submit(function(event){
     $("ul").text("");
     var userInput = $('#user-condition').val();
@@ -14,7 +18,7 @@ $(document).ready(function() {
     });
     event.preventDefault();
   });
-  
+
   $('form#doctor-name').submit(function(event){
     $("ul").text("");
     var userInput = $('#user-doctor').val();
