@@ -21,6 +21,10 @@ li{
   margin-top: 15px;
 }
 
+ul{
+  display: inline;
+}
+
 .row{
   margin-top: 20px;
 }
@@ -35,4 +39,8 @@ li{
 
 #show-doctors{
   margin: auto;
+}
+
+#map{
+  height: 400px;
 }

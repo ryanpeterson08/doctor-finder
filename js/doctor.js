@@ -13,7 +13,7 @@ Doctor.prototype.searchByCondition = function(userIssue)
      instance.doctorsArray = [];
      for(var x = 0; x < result.data.length; x++)
      {
-       instance.doctorsArray.push(result.data[x].profile);
+       instance.doctorsArray.push(result.data[x]);
      }
     })
    .fail(function(error){
@@ -28,7 +28,7 @@ Doctor.prototype.searchByName = function(name)
     instance.doctorsArray = [];
     for(var x = 0; x < result.data.length; x++)
     {
-      instance.doctorsArray.push(result.data[x].profile);
+      instance.doctorsArray.push(result.data[x]);
     }
   }).fail(function(error){
     console.log("fail");
