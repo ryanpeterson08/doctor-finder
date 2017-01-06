@@ -10,17 +10,35 @@
   </head>
   <body>
     <div class="container">
-      <h3>Welcome to the Doctor Finder!</h3>
-      <div class="form-group">
-        <form id="input">
-          <label for="user-condition">Enter in your condition</label>
-          <input type="text" id="user-input" class="form-control">
-          <button type="submit" class="btn btn-info">Help!</button>
-        </form>
-      </div>
-      <div id="show-doctors">
-        <ul></ul>
-      </div>
+      <h3 class="text-center">Welcome to the Doctor Finder!</h3>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <div class="form-group">
+            <form id="condition">
+              <label for="user-condition">Enter in Your Condition</label>
+              <input type="text" id="user-condition" class="form-control">
+              <button type="submit" class="btn btn-danger">Search by Condition</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div class="form-group">
+            <form id="doctor-name">
+              <label for="doctor-name">Enter in a Doctor Name</label>
+              <input type="text" id="user-doctor" class="form-control">
+              <button type="submit" class="btn btn-danger">Search by Doctor</button>
+            </form>
+          </div>
+        </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <div id="show-doctors">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
     </div>
   </body>
 </html>

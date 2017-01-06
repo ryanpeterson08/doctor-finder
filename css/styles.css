@@ -1,3 +1,27 @@
-#user-input{
+button{
+  margin-top: 10px;
+}
+
+input{
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+.row{
+  margin-top: 20px;
+}
+
+#user-condition{
   width: 250px;
+}
+
+#user-doctor{
+  width: 250px;
+}
+
+#show-doctors{
+  margin: auto;
 }
