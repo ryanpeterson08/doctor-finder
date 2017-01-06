@@ -10,6 +10,17 @@ ul{
   list-style: none;
 }
 
+img{
+  display: block;
+  margin: auto;
+}
+
+li{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
 .row{
   margin-top: 20px;
 }
