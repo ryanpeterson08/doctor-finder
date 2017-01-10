@@ -14,6 +14,7 @@ This web app allows the user to input either a condition or a doctor name.  When
 * Run bower install
 * Run gulp build
 * Run gulp serve
+* Go to https://developer.betterdoctor.com/ and create an account to get an API key
 * Index.html should open up on your default browser, if not, go to localhost:3000
 
 
